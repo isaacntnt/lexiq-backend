@@ -11,7 +11,7 @@ from collections import Counter
 from sentence_transformers import SentenceTransformer, util
 
 app = FastAPI()
-model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+model = SentenceTransformer('all-MiniLM-L3-v2')
 stop_words = set(stopwords.words("english"))
 
 app.add_middleware(
